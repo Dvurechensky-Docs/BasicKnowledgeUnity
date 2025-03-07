@@ -1,3 +1,4 @@
+<p align="center">✨Dvurechensky✨</p>
 <p align="center">
     <p align="center">
         <img src="Git/gitPreview.png" width="100%" alt="Banner">
@@ -30,3 +31,4 @@
 <p align="center">
     <img src="Git/view.gif" height="100%" width="100%">
 </p>
+<p align="center">✨Dvurechensky✨</p>
