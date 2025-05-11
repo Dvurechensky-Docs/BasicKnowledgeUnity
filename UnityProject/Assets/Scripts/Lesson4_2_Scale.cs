@@ -1,13 +1,21 @@
+п»ї/*
+ * Author: Nikolay Dvurechensky
+ * Site: https://www.dvurechensky.pro/
+ * Gmail: dvurechenskysoft@gmail.com
+ * Last Updated: 12 РјР°СЏ 2025 01:23:16
+ * Version: 1.0.3
+ */
+
 using UnityEngine;
 
 /*
- * Отслеживание нажатий от пользователя
+ * РћС‚СЃР»РµР¶РёРІР°РЅРёРµ РЅР°Р¶Р°С‚РёР№ РѕС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
  */
 public class Lesson4_2_Scale : MonoBehaviour
 {
     /// <summary>
-    /// Отправляется, когда пользователь нажимает кнопку мыши
-    /// в области GUIElement или Collider
+    /// РћС‚РїСЂР°РІР»СЏРµС‚СЃСЏ, РєРѕРіРґР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅР°Р¶РёРјР°РµС‚ РєРЅРѕРїРєСѓ РјС‹С€Рё
+    /// РІ РѕР±Р»Р°СЃС‚Рё GUIElement РёР»Рё Collider
     /// </summary>
     private void OnMouseDown()
     {
@@ -15,7 +23,7 @@ public class Lesson4_2_Scale : MonoBehaviour
     }
 
     /// <summary>
-    /// Отправляется, когда пользователь отпускает кнопку мыши.
+    /// РћС‚РїСЂР°РІР»СЏРµС‚СЃСЏ, РєРѕРіРґР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РѕС‚РїСѓСЃРєР°РµС‚ РєРЅРѕРїРєСѓ РјС‹С€Рё.
     /// </summary>
     private void OnMouseUp()
     {
@@ -23,15 +31,15 @@ public class Lesson4_2_Scale : MonoBehaviour
     }
 
     /// <summary>
-    /// Вызывается, когда пользователь щелкнул Collider и все еще удерживает мышь.
+    /// Р’С‹Р·С‹РІР°РµС‚СЃСЏ, РєРѕРіРґР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ С‰РµР»РєРЅСѓР» Collider Рё РІСЃРµ РµС‰Рµ СѓРґРµСЂР¶РёРІР°РµС‚ РјС‹С€СЊ.
     /// </summary>
     private void OnMouseDrag()
     {
-        // переменной записываються координаты мыши по X и Y
+        // РїРµСЂРµРјРµРЅРЅРѕР№ Р·Р°РїРёСЃС‹РІР°СЋС‚СЊСЃСЏ РєРѕРѕСЂРґРёРЅР°С‚С‹ РјС‹С€Рё РїРѕ X Рё Y
         var mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 13f);
-        // переменной - объекту присваиваеться переменная с координатами мыши
+        // РїРµСЂРµРјРµРЅРЅРѕР№ - РѕР±СЉРµРєС‚Сѓ РїСЂРёСЃРІР°РёРІР°РµС‚СЊСЃСЏ РїРµСЂРµРјРµРЅРЅР°СЏ СЃ РєРѕРѕСЂРґРёРЅР°С‚Р°РјРё РјС‹С€Рё
         var objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        //объекту записываються координаты
+        //РѕР±СЉРµРєС‚Сѓ Р·Р°РїРёСЃС‹РІР°СЋС‚СЊСЃСЏ РєРѕРѕСЂРґРёРЅР°С‚С‹
         transform.position = objPosition; 
     }
 }

@@ -1,13 +1,21 @@
+п»ї/*
+ * Author: Nikolay Dvurechensky
+ * Site: https://www.dvurechensky.pro/
+ * Gmail: dvurechenskysoft@gmail.com
+ * Last Updated: 12 РјР°СЏ 2025 01:23:16
+ * Version: 1.0.3
+ */
+
 using UnityEngine;
 
 /*
- * События OnCollision и OnTrigger
+ * РЎРѕР±С‹С‚РёСЏ OnCollision Рё OnTrigger
  */
 public class Lesson_7_2_Scale : MonoBehaviour
 {
     /// <summary>
-    /// Вызывается когда объект соприкасается с другим 
-    /// объектом (строго наличие RigitBody)
+    /// Р’С‹Р·С‹РІР°РµС‚СЃСЏ РєРѕРіРґР° РѕР±СЉРµРєС‚ СЃРѕРїСЂРёРєР°СЃР°РµС‚СЃСЏ СЃ РґСЂСѓРіРёРј 
+    /// РѕР±СЉРµРєС‚РѕРј (СЃС‚СЂРѕРіРѕ РЅР°Р»РёС‡РёРµ RigitBody)
     /// </summary>
     /// <param name="collision">Collision</param>
     private void OnCollisionEnter(Collision collision)
@@ -16,8 +24,8 @@ public class Lesson_7_2_Scale : MonoBehaviour
     }
 
     /// <summary>
-    /// OnCollisionExit вызывается, когда этот коллайдер/жесткое 
-    /// тело перестал касаться другого твердого тела/коллайдера.
+    /// OnCollisionExit РІС‹Р·С‹РІР°РµС‚СЃСЏ, РєРѕРіРґР° СЌС‚РѕС‚ РєРѕР»Р»Р°Р№РґРµСЂ/Р¶РµСЃС‚РєРѕРµ 
+    /// С‚РµР»Рѕ РїРµСЂРµСЃС‚Р°Р» РєР°СЃР°С‚СЊСЃСЏ РґСЂСѓРіРѕРіРѕ С‚РІРµСЂРґРѕРіРѕ С‚РµР»Р°/РєРѕР»Р»Р°Р№РґРµСЂР°.
     /// </summary>
     /// <param name="collision">Collision</param>
     private void OnCollisionExit(Collision collision)
@@ -26,8 +34,8 @@ public class Lesson_7_2_Scale : MonoBehaviour
     }
 
     /// <summary>
-    /// OnCollisionStay вызывает один раз в кадре для каждого 
-    /// коллайдера/жесткого тела, который касается вопроса жесткого тела/коллайдера.
+    /// OnCollisionStay РІС‹Р·С‹РІР°РµС‚ РѕРґРёРЅ СЂР°Р· РІ РєР°РґСЂРµ РґР»СЏ РєР°Р¶РґРѕРіРѕ 
+    /// РєРѕР»Р»Р°Р№РґРµСЂР°/Р¶РµСЃС‚РєРѕРіРѕ С‚РµР»Р°, РєРѕС‚РѕСЂС‹Р№ РєР°СЃР°РµС‚СЃСЏ РІРѕРїСЂРѕСЃР° Р¶РµСЃС‚РєРѕРіРѕ С‚РµР»Р°/РєРѕР»Р»Р°Р№РґРµСЂР°.
     /// </summary>
     /// <param name="collision">Collision</param>
     private void OnCollisionStay(Collision collision)
@@ -36,8 +44,8 @@ public class Lesson_7_2_Scale : MonoBehaviour
     }
 
     /// <summary>
-    /// Вызывается когда объект соприкасается 
-    /// с другим объектом (строго наличие Collider)
+    /// Р’С‹Р·С‹РІР°РµС‚СЃСЏ РєРѕРіРґР° РѕР±СЉРµРєС‚ СЃРѕРїСЂРёРєР°СЃР°РµС‚СЃСЏ 
+    /// СЃ РґСЂСѓРіРёРј РѕР±СЉРµРєС‚РѕРј (СЃС‚СЂРѕРіРѕ РЅР°Р»РёС‡РёРµ Collider)
     /// </summary>
     private void OnTriggerEnter(Collider other)
     {
@@ -45,7 +53,7 @@ public class Lesson_7_2_Scale : MonoBehaviour
     }
 
     /// <summary>
-    /// OnTriggerExit вызывается, когда коллайдер other перестал касаться триггера.
+    /// OnTriggerExit РІС‹Р·С‹РІР°РµС‚СЃСЏ, РєРѕРіРґР° РєРѕР»Р»Р°Р№РґРµСЂ other РїРµСЂРµСЃС‚Р°Р» РєР°СЃР°С‚СЊСЃСЏ С‚СЂРёРіРіРµСЂР°.
     /// </summary>
     /// <param name="other">Collider</param>
     private void OnTriggerExit(Collider other)
@@ -54,7 +62,7 @@ public class Lesson_7_2_Scale : MonoBehaviour
     }
 
     /// <summary>
-    /// OnTriggerStay вызывается почти во всех кадрах для каждого другого коллайдера, касающегося триггера.
+    /// OnTriggerStay РІС‹Р·С‹РІР°РµС‚СЃСЏ РїРѕС‡С‚Рё РІРѕ РІСЃРµС… РєР°РґСЂР°С… РґР»СЏ РєР°Р¶РґРѕРіРѕ РґСЂСѓРіРѕРіРѕ РєРѕР»Р»Р°Р№РґРµСЂР°, РєР°СЃР°СЋС‰РµРіРѕСЃСЏ С‚СЂРёРіРіРµСЂР°.
     /// </summary>
     /// <param name="other">Collider</param>
     private void OnTriggerStay(Collider other)

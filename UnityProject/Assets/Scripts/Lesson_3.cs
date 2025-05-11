@@ -1,8 +1,16 @@
+ï»¿/*
+ * Author: Nikolay Dvurechensky
+ * Site: https://www.dvurechensky.pro/
+ * Gmail: dvurechenskysoft@gmail.com
+ * Last Updated: 12 Ð¼Ð°Ñ 2025 01:23:16
+ * Version: 1.0.3
+ */
+
 using System.Collections.Generic;
 using UnityEngine;
 
 /*
- * Îáúåêòû, êîìïîíåíòû, óñëîâíûå îïåðàöèè è öèêëû
+ * ÐžÐ±ÑŠÐµÐºÑ‚Ñ‹, ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ñ‹, ÑƒÑÐ»Ð¾Ð²Ð½Ñ‹Ðµ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¸ Ð¸ Ñ†Ð¸ÐºÐ»Ñ‹
  */
 public class Lesson_3 : MonoBehaviour
 {
@@ -33,7 +41,7 @@ public class Lesson_3 : MonoBehaviour
         if (obj == null && createObjList.Count == 0)
             return;
 
-        //åñëè îáúåêò Lesson_7 ñóùåñòâóåò â ñïèñêå Lesson_3
+        //ÐµÑÐ»Ð¸ Ð¾Ð±ÑŠÐµÐºÑ‚ Lesson_7 ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚ Ð² ÑÐ¿Ð¸ÑÐºÐµ Lesson_3
         var existObjLs7 = createObjList.FindIndex((ob) => ob.name == "Cylinder(Clone)");
         if(existObjLs7 == -1 && obj != null)
             createObjList.Add(obj);

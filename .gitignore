@@ -1,3 +1,5 @@
+pre_commit.ps1
+pre_commit.log
 UnityProject/Library
 UnityProject/.vs
 UnityProject/obj

@@ -1,10 +1,18 @@
+п»ї/*
+ * Author: Nikolay Dvurechensky
+ * Site: https://www.dvurechensky.pro/
+ * Gmail: dvurechenskysoft@gmail.com
+ * Last Updated: 12 РјР°СЏ 2025 01:23:16
+ * Version: 1.0.3
+ */
+
 using UnityEngine;
 
 /*
- * Создаёт объект для Lesson_8
- * События OnCollision и OnTrigger 
- * проявляющееся на объекте Cube 
- * после соприкосновения с Wall
+ * РЎРѕР·РґР°С‘С‚ РѕР±СЉРµРєС‚ РґР»СЏ Lesson_8
+ * РЎРѕР±С‹С‚РёСЏ OnCollision Рё OnTrigger 
+ * РїСЂРѕСЏРІР»СЏСЋС‰РµРµСЃСЏ РЅР° РѕР±СЉРµРєС‚Рµ Cube 
+ * РїРѕСЃР»Рµ СЃРѕРїСЂРёРєРѕСЃРЅРѕРІРµРЅРёСЏ СЃ Wall
  */
 public class Lesson_7 : MonoBehaviour
 {

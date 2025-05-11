@@ -1,7 +1,15 @@
+п»ї/*
+ * Author: Nikolay Dvurechensky
+ * Site: https://www.dvurechensky.pro/
+ * Gmail: dvurechenskysoft@gmail.com
+ * Last Updated: 12 РјР°СЏ 2025 01:23:16
+ * Version: 1.0.3
+ */
+
 using UnityEngine;
 
 /*
- * Instantiate(Создание объектов)
+ * Instantiate(РЎРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚РѕРІ)
  */
 public class Lesson_5 : MonoBehaviour
 {
@@ -18,7 +26,7 @@ public class Lesson_5 : MonoBehaviour
             ControllerLessons.Instance.Lesson_3.createObjList.Add(clone);
         }
 
-        //Создание и взаимодействие с созданным
+        //РЎРѕР·РґР°РЅРёРµ Рё РІР·Р°РёРјРѕРґРµР№СЃС‚РІРёРµ СЃ СЃРѕР·РґР°РЅРЅС‹Рј
         inst_Object = Instantiate(gameObjects[2], new Vector3(10,10,10), Quaternion.identity);
         inst_Object.name = "my";
         inst_Object.GetComponent<Renderer>().material.color = Color.red;

@@ -1,8 +1,16 @@
+п»ї/*
+ * Author: Nikolay Dvurechensky
+ * Site: https://www.dvurechensky.pro/
+ * Gmail: dvurechenskysoft@gmail.com
+ * Last Updated: 12 РјР°СЏ 2025 01:23:16
+ * Version: 1.0.3
+ */
+
 using System.Collections;
 using UnityEngine;
 
 /*
- * Корутины (Coroutines)
+ * РљРѕСЂСѓС‚РёРЅС‹ (Coroutines)
  */
 public class Lesson_6 : MonoBehaviour
 {

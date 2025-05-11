@@ -1,7 +1,15 @@
+п»ї/*
+ * Author: Nikolay Dvurechensky
+ * Site: https://www.dvurechensky.pro/
+ * Gmail: dvurechenskysoft@gmail.com
+ * Last Updated: 12 РјР°СЏ 2025 01:23:16
+ * Version: 1.0.3
+ */
+
 using UnityEngine;
 
 /*
- * Отслеживание нажатий от пользователя
+ * РћС‚СЃР»РµР¶РёРІР°РЅРёРµ РЅР°Р¶Р°С‚РёР№ РѕС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
  */
 public class Lesson_4 : MonoBehaviour
 {
