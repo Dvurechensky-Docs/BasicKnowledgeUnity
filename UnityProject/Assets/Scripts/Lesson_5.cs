@@ -2,8 +2,8 @@
  * Author: Nikolay Dvurechensky
  * Site: https://dvurechensky.pro/
  * Gmail: dvurechenskysoft@gmail.com
- * Last Updated: 19 июля 2026 09:59:42
- * Version: 1.0.337
+ * Last Updated: 20 июля 2026 12:09:21
+ * Version: 1.0.338
  */
 
 using UnityEngine;
